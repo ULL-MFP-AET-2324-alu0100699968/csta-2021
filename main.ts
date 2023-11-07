@@ -1,5 +1,6 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     info.changeScoreBy(1)
+    info.changeCountdownBy(5)
     otherSprite.destroy(effects.hearts, 100)
     music.baDing.play()
 })
